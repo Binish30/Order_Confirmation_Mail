@@ -1,0 +1,28 @@
+{
+  "name": "e-com",
+  "version": "1.0.0",
+  "description": "An e-commerce web application API",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/app.js",
+    "start": "node src/app.js",
+    "watch": "node-dev --notify=false src/app.js"
+  },
+  "author": "Binish Rawal",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "nodemailer": "^6.7.5",
+    "stripe": "^8.193.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "node-dev": "^7.4.3"
+  }
+}
